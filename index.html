@@ -9,8 +9,13 @@
             background-color: rgb(25,25,25);
             color: white;
             font-family: Arial, Helvetica, sans-serif;
+            display: grid;
+            place-items: center;
         }
 
+        .container{
+            
+        }
         .title{
             font-size: 30px;
             font-weight: bold;
@@ -45,7 +50,8 @@
     </style>
 </head>
 <body>
-    <p class="title">Scored-Rock-Paper-Scissors</p>
+    <div class="container">
+        <p class="title">Scored-Rock-Paper-Scissors</p>
     <img class="image" src="rock.jpg" onclick="game('Rock')">        
     <img class="image" src="paper.jpg" onclick="game('Paper')">
     <img class="image" src="scissors.jpg" onclick="game('Scissors')">
@@ -58,6 +64,7 @@
     <button class="reset-btn">Reset Score</button>
     <button class="auto-play" onclick="autoPlay();">Auto Play</button>
     <div class="pop-up"></div>
+    </div>
     <script>
          
            function compMovePicker(){
